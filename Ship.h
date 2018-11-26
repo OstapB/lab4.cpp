@@ -15,7 +15,7 @@ protected:
 	string capitan;
 public:
 	string type;
-	int value;
+	int price;
 
 	Ship() {
 		tonnage = 1000;
@@ -24,43 +24,43 @@ public:
 		year = 1991;
 		capitan = " Jhon White";
 		type = " passangers";
-		value = 6;
+		price = 6;
 		get();
 	}
 
-	Ship(int ton, string name, int number_of_passangers, int year, string capitan, string type, int value) {
-		ton = ton;
+	Ship(int tonnage, string name, int number_of_passangers, int year, string capitan, string type, int price) {
+		tonnage = tonnage;
 		name = name;
 		number_of_passangers = number_of_passangers;
 		year = year;
 		capitan = capitan;
 		type = type;
-		value = value;
+		price = price;
 	}
 
 	~Ship() {
 		cout << "Destructor" << endl;
 	}
 
-	void Ship2(int setTon, string setName, int setNumber_of_passangers) {
-		tonnage = setTon;
+	void Ship2(int setTonnage, string setName, int setNumber_of_passangers) {
+		tonnage = setTonnage;
 		name = setName;
 		number_of_passangers = setNumber_of_passangers;
 		year = 2001;
 		capitan = " Ostap";
 		type = " big";
-		value = 8;
+		price = 8;
 		get();
 	}
 
-	void Ship3(int setTon, string setName, int setNumber_of_passangers) {
-		tonnage = setTon;
+	void Ship3(int setTonnage, string setName, int setNumber_of_passangers) {
+		tonnage = setTonnage;
 		name = setName;
 		number_of_passangers = setNumber_of_passangers;
 		year = 2002;
 		capitan = " Sasha";
 		type = " small";
-		value = 10;
+		price = 10;
 		get();
 	}
 
@@ -71,7 +71,7 @@ public:
 		cout << "Year:" << year << endl;
 		cout << "Capitan:" << capitan << endl;
 		cout << "Type:" << type << endl;
-		cout << "Value:" << value << endl;
+		cout << "Price:" << price << endl;
 		cout << "\n" << endl;
 	}
 };
